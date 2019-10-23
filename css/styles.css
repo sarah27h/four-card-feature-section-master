@@ -1,0 +1,167 @@
+/* gerneral */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #b3b0b0;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-padding {
+  padding: 25px;
+}
+
+.cyan-border {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.red-border {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.orange-border {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.blue-border {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+/* feat section */
+.section-heading {
+  width: auto;
+  padding: 90px 0;
+}
+
+.headline-eyebrow {
+  font-size: 24px;
+  color: #3f3232;
+  font-weight: 200;
+}
+
+.section-headline {
+  font-weight: 600;
+  font-size: 24px;
+  color: #333;
+}
+
+.section-intro {
+  margin-top: 20px;
+  color: #918f8f;
+}
+
+#card-container-grid {
+  display: grid;
+  gap: 35px;
+  /* (colNum, minmax(set a column to be 1fr, 
+  but shrink no further than 200px)) */
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
+  grid-template-rows: repeat(4, minmax(225px, 1fr));
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 225px;
+  margin-bottom: 25px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 16px 1px rgba(201, 197, 201, 1);
+  -moz-box-shadow: 0px 3px 16px 1px rgba(201, 197, 201, 1);
+  box-shadow: 0px 3px 16px 1px rgba(201, 197, 201, 1);
+}
+
+.card-headline {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.card-body {
+  font-size: 13px;
+}
+
+.card-icon {
+  margin-top: 30px;
+  margin-left: auto;
+}
+
+/* media queries */
+/* for large screens */
+@media screen and (min-width: 1023px) {
+  .container {
+    width: 993px;
+  }
+
+  .section-heading {
+    padding: 90px 226px;
+  }
+
+  @supports (display: grid) {
+    #card-container-grid {
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+      grid-template-rows: repeat(2, minmax(225px, 1fr));
+    }
+  }
+
+  #card-container-grid .card:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: center;
+  }
+
+  #card-container-grid .card:nth-child(4) {
+    grid-column: 3 / 4;
+    grid-row: -1 / -3;
+    align-self: center;
+  }
+}
+
+/* for large screens */
+@media screen and (min-width: 650px) and (max-width: 1023px) {
+  .container {
+    width: 650px;
+  }
+
+  .section-heading {
+    padding: 90px 160px;
+  }
+
+  @supports (display: grid) {
+    #card-container-grid {
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      grid-template-rows: repeat(2, minmax(225px, 1fr));
+    }
+  }
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
