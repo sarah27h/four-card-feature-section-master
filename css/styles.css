@@ -71,7 +71,7 @@ video {
   color: #918f8f;
 }
 
-#card-container-grid {
+.card-grid {
   display: grid;
   gap: 35px;
   /* (colNum, minmax(set a column to be 1fr, 
@@ -121,19 +121,19 @@ video {
   }
 
   @supports (display: grid) {
-    #card-container-grid {
+    .card-grid {
       grid-template-columns: repeat(3, minmax(200px, 1fr));
       grid-template-rows: repeat(2, minmax(225px, 1fr));
     }
   }
 
-  #card-container-grid .card:nth-child(1) {
+  .card-grid .card:nth-child(1) {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     align-self: center;
   }
 
-  #card-container-grid .card:nth-child(4) {
+  .card-grid .card:nth-child(4) {
     grid-column: 3 / 4;
     grid-row: -1 / -3;
     align-self: center;
@@ -151,7 +151,7 @@ video {
   }
 
   @supports (display: grid) {
-    #card-container-grid {
+    .card-grid {
       grid-template-columns: repeat(2, minmax(200px, 1fr));
       grid-template-rows: repeat(2, minmax(225px, 1fr));
     }

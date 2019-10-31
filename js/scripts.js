@@ -25,7 +25,7 @@ const cardsData = [
   }
 ];
 
-const cardContainerGrid = document.getElementById('card-container-grid');
+const cardContainerGrid = document.getElementById('js-card-grid');
 
 function addCardSection(cardsData) {
   cardsData.forEach(cardData => {
