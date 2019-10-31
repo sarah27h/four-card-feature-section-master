@@ -73,7 +73,7 @@ video {
 
 .card-grid {
   display: grid;
-  gap: 35px;
+  gap: 0px 25px;
   /* (colNum, minmax(set a column to be 1fr, 
   but shrink no further than 200px)) */
   grid-template-columns: repeat(1, minmax(200px, 1fr));
@@ -113,7 +113,7 @@ video {
 /* for large screens */
 @media screen and (min-width: 1023px) {
   .container {
-    width: 993px;
+    width: 1000px;
   }
 
   .section-heading {
