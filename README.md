@@ -28,4 +28,4 @@ Your users should:
 ## Building project
 
 - Use mobile-first design approach for the challenge
-- It's design based on the Css Grid system
+- It's design based on the CSS Grid system
