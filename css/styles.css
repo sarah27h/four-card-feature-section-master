@@ -140,7 +140,7 @@ video {
   }
 }
 
-/* for large screens */
+/* for medium screens */
 @media screen and (min-width: 650px) and (max-width: 1023px) {
   .container {
     width: 650px;
