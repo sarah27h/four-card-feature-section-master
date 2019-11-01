@@ -37,7 +37,7 @@ function addCardSection(cardsData) {
     cardContainerGrid.appendChild(card);
 
     // create, add card data
-    const cardHeadline = document.createElement('h4');
+    const cardHeadline = document.createElement('h3');
     cardHeadline.setAttribute('class', 'card-headline');
     cardHeadline.innerHTML = cardData.cardHeadline;
     card.appendChild(cardHeadline);
@@ -49,6 +49,7 @@ function addCardSection(cardsData) {
 
     const cardIcon = document.createElement('img');
     cardIcon.setAttribute('class', 'card-icon');
+    cardIcon.setAttribute('alt', `${cardData.cardHeadline} icon`);
     cardIcon.setAttribute('src', cardData.cardIconSrc);
     // setAttributes(cardIcon, { class: 'card-icon', src:  });
     card.appendChild(cardIcon);
